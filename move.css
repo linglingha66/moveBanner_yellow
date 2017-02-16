@@ -1,0 +1,67 @@
+body{
+	padding: 50px;
+}
+.wrap{
+	position:relative;
+	width:520px;
+	height:280px;
+	overflow-x: scroll;
+	overflow: hidden;/*将后面内容隐藏*/
+	/*float:left;*/
+	margin:auto ;
+}
+.list{
+	width:4200px;
+	height:280px;
+	position: absolute;
+	z-index: 1;
+}
+.list img{
+	float: left;
+}
+.circle{
+	height: 10px;
+	position: absolute;
+	bottom:20px;
+	left:222px;
+	z-index: 2;
+}
+.circle span{
+	width:10px;
+	height:10px;
+	background: #888;
+	border:1px solid #fff;
+	border-radius:50%;
+	float:left;
+	cursor:pointer;
+	margin-right:5px;
+}
+.circle .on{
+	background: orangered;
+}
+.button{
+	display: none;
+	width:40px;
+	height:40px;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+	font:bold 26px "Microsoft YaHei";
+	color:#fff;
+	position: absolute;
+	top:120px;
+	z-index:3;
+}
+.button:hover{
+	background: rgba(0,0,0,.7);
+}
+.wrap:hover .button{
+	display: block;
+}
+#prev{
+	left:0px;
+}
+#next{
+	right:0px;
+}
